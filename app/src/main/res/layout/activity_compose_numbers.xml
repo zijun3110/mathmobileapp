@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".ComposeNumbersActivity">
+
+    <TextView
+        android:id="@+id/tvTargetNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find two numbers that add up to:"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <EditText
+            android:id="@+id/etNum1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="24sp"
+            android:layout_marginRight="16dp"/>
+
+        <EditText
+            android:id="@+id/etNum2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:inputType="number"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCheckCompose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check"
+        android:textSize="18sp"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:id="@+id/tvComposeResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnNewCompose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Number"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnBackHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF6200EE"/>
+
+</LinearLayout>

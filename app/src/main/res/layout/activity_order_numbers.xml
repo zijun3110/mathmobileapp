@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#E8F5E9">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order these numbers:"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Original Numbers -->
+    <LinearLayout
+        android:id="@+id/originalNumbersContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your ordered numbers:"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Ordered Numbers -->
+    <LinearLayout
+        android:id="@+id/orderedNumbersContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Number Selection Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <Button
+            android:id="@+id/btnSelect1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="1"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btnSelect2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="2"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btnSelect3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="3"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btnSelect4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="4"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAscending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Ascending"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnDescending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Descending"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="32dp">
+
+        <Button
+            android:id="@+id/btnNewNumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Numbers"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnBackHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to Home"
+            android:backgroundTint="#FF6200EE"/>
+    </LinearLayout>
+
+</LinearLayout>
